@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập Infographic & Video YouTube</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Times New Roman', serif;
+            background: linear-gradient(135deg, #eaf4ff, #f8fbff);
+            margin: 0;
+            padding: 30px 15px;
+            color: #1f2d3d;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 16px;
+            padding: 30px 35px;
+            box-shadow: 0 12px 36px rgba(0, 59, 115, 0.12);
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #e8eef7;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+        h1 {
+            margin: 0;
+            color: #0056b3;
+            font-size: 2.2rem;
+        }
+        .subtitle {
+            margin: 10px 0 0;
+            color: #57708f;
+            font-size: 1.1rem;
+        }
+        .intro {
+            text-align: justify;
+            color: #3d4d5f;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin: 20px 0 30px;
+            background-color: #f4f8ff;
+            padding: 15px 20px;
+            border-left: 4px solid #0056b3;
+            border-radius: 4px;
+        }
+        .section-title {
+            color: #183b63;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 8px;
+            margin: 35px 0 20px;
+            font-size: 1.6rem;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .product-card {
+            background: #fff;
+            border: 1px solid #dfeaf7;
+            border-radius: 14px;
+            padding: 20px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .product-card h3 {
+            margin-top: 0;
+            color: #0d4c8a;
+        }
+        .product-card p {
+            color: #4d5f75;
+            line-height: 1.6;
+        }
+        .product-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 14px 0;
+            border-radius: 10px;
+            border: 1px solid #e1eaf3;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Tỷ lệ 16:9 cho video nhúng */
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            margin: 14px 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 11px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s ease;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .btn-image { background: #0ca678; color: #fff; }
+        .btn-image:hover { background: #0a865e; }
+        .btn-video { background: #ff0000; color: #fff; }
+        .btn-video:hover { background: #cc0000; }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #697d94;
+            font-size: 0.95rem;
+            border-top: 1px solid #edf1f6;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Tiêu đề trang -->
+        <div class="header">
+            <h1>BÀI TẬP NHIỆM VỤ 2.2</h1>
+            <p class="subtitle">Hiển thị Infographic và Nhúng Video YouTube Trực Tuyến</p>
+        </div>
+
+        <!-- Mô tả ngắn -->
+        <p class="intro">
+            <strong>Mô tả ngắn:</strong> Trang web trình bày infographic tóm tắt nội dung học tập thông qua hình ảnh trực quan (file <code>Lab05_Ex2.1.png</code>) và nhúng trực tiếp video YouTube từ nhiệm vụ 2.2 giúp người xem có thể theo dõi và thực hành một cách dễ dàng.
+        </p>
+
+        <h2 class="section-title">Nội Dung Bài Tập</h2>
+        <div class="product-grid">
+            <!-- Khối 1: Hiển thị Infographic -->
+            <div class="product-card">
+                <div>
+                    <h3>1. Infographic Bài Tập</h3>
+                    <p>Hình ảnh infographic tóm tắt các kiến thức chính trong bài học.</p>
+                    <img class="product-image" src="Lab05_Ex2.1.png" alt="Infographic Nhiệm vụ 2.2">
+                </div>
+                <a href="Lab05_Ex2.1.png" target="_blank" rel="noopener noreferrer" class="btn btn-image">🖼️ Mở ảnh kích thước đầy đủ</a>
+            </div>
+
+            <!-- Khối 2: Nhúng Video Youtube & Giữ nút chuyển sang Youtube -->
+            <div class="product-card">
+                <div>
+                    <h3>2. Video Hướng Dẫn YouTube</h3>
+                    <p>Video nhúng phát trực tiếp hướng dẫn thực hiện Bài tập Nhiệm vụ 2.2.</p>
+                    
+                    <!-- Nhúng khung phát Video Youtube -->
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/hwOGPCl9_k8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- Giữ nguyên nút nhảy qua YouTube theo yêu cầu -->
+                <a href="https://youtube.com/shorts/hwOGPCl9_k8?si=fabN7ct3MOJByHY3" target="_blank" rel="noopener noreferrer" class="btn btn-video">▶ Xem trực tiếp trên YouTube</a>
+            </div>
+        </div>
+
+        <!-- Ghi chú bản quyền -->
+        <footer>
+            <p>© 2026 Bản quyền thuộc về [Tên của bạn/Nhóm học tập]. Tất cả các quyền được bảo lưu.</p>
+        </footer>
+    </div>
+</body>
+</html>
